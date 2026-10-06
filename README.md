@@ -148,18 +148,11 @@ Loja online em Java aplicando orientação a objetos: carrinho, checkout simulad
   <img src="https://github-trophies.vercel.app/?username=beatrizcampos-dev&theme=flat&no-frame=true&no-bg=true&column=6&margin-w=8" alt="Troféus do GitHub" />
 </p>
 
-## 🐍 A cobrinha passando pelas minhas contribuições
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/beatrizcampos-dev/beatrizcampos-dev/output/snake-escuro.svg" />
-    <img src="https://raw.githubusercontent.com/beatrizcampos-dev/beatrizcampos-dev/output/snake-claro.svg" alt="Cobrinha comendo o gráfico de contribuições" />
-  </picture>
-</p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/beatrizcampos-dev/beatrizcampos-dev/output/contribuicoes-escuro.svg" /><img src="https://raw.githubusercontent.com/beatrizcampos-dev/beatrizcampos-dev/output/contribuicoes-claro.svg" alt="Minhas contribuições no GitHub" width="100%" /></picture></p>
 
 <p align="center">
   <b>Tem uma vaga, um projeto ou só quer trocar uma ideia?</b><br>
   <a href="https://www.linkedin.com/in/beatrizcampos-dev">Me chama no LinkedIn</a> · <a href="mailto:beatrizcalves2024@gmail.com">beatrizcalves2024@gmail.com</a>
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:C98462,100:A4563A&height=110&section=footer&text=design%20%E2%86%92%20code%20%E2%86%92%20deploy&fontSize=20&fontColor=F3ECE3&fontAlignY=70" width="100%" alt="" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:F6C4D1,50:EA97AD,100:C9708A&height=120&section=footer&text=feito%20com%20carinho%20%E2%9C%BF&fontSize=20&fontColor=FFFFFF&fontAlignY=72" width="100%" alt="" />
