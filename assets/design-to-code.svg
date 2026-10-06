@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="260" viewBox="0 0 840 260" role="img" aria-label="Animação: um wireframe desenhado no Figma vira código">
+  <style>
+    .bg { fill: #F3ECE3; }
+    .card { fill: #FFFFFF; stroke: #E0D3C4; }
+    .lbl { font: 600 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #9C8B7E; letter-spacing: .5px; }
+    .tag { font: 600 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #FFF8F2; }
+    .code { font: 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #4A3A31; }
+    .k { fill: #A4563A; font-weight: 700; }
+    .s { fill: #C98462; }
+    .c { fill: #9C8B7E; }
+    .wire { fill: #F3ECE3; stroke: #A4563A; stroke-width: 1.5; }
+    .wire2 { fill: #E9DFD3; }
+
+    /* Wireframe: blocos aparecem em sequência e o ciclo se repete */
+    .w { opacity: 0; animation: surge 8s infinite; }
+    .w1 { animation-delay: .2s; } .w2 { animation-delay: .6s; } .w3 { animation-delay: 1s; }
+    .w4 { animation-delay: 1.4s; } .w5 { animation-delay: 1.8s; }
+    @keyframes surge { 0%,2% { opacity: 0; transform: translateY(6px); } 8%,88% { opacity: 1; transform: none; } 96%,100% { opacity: 0; } }
+
+    /* Seleção estilo Figma pulsando */
+    .sel { fill: none; stroke: #A4563A; stroke-width: 1.5; stroke-dasharray: 4 3; animation: pulsa 1.6s ease-in-out infinite; }
+    @keyframes pulsa { 50% { stroke-opacity: .25; } }
+
+    /* Seta andando */
+    .seta { animation: anda 1.4s ease-in-out infinite; }
+    @keyframes anda { 50% { transform: translateX(8px); } }
+
+    /* Código: linhas "digitando" depois do wireframe */
+    .ln { opacity: 0; animation: digita 8s infinite; }
+    .l1 { animation-delay: 2.4s; } .l2 { animation-delay: 2.8s; } .l3 { animation-delay: 3.2s; }
+    .l4 { animation-delay: 3.6s; } .l5 { animation-delay: 4s; } .l6 { animation-delay: 4.4s; }
+    @keyframes digita { 0% { opacity: 0; } 4%,70% { opacity: 1; } 80%,100% { opacity: 0; } }
+
+    .cursor { animation: pisca 1s steps(1) infinite; }
+    @keyframes pisca { 50% { opacity: 0; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .w, .ln { animation: none; opacity: 1; }
+      .sel, .seta, .cursor { animation: none; }
+    }
+  </style>
+
+  <rect class="bg" width="840" height="260" rx="16"/>
+
+  <!-- Lado do design -->
+  <text class="lbl" x="40" y="38">01 · DESENHO NO FIGMA</text>
+  <rect class="card" x="40" y="52" width="300" height="176" rx="12"/>
+  <g transform="translate(60 68)">
+    <rect class="w w1 wire2" width="260" height="22" rx="5"/>
+    <rect class="w w2 wire" y="34" width="150" height="16" rx="4"/>
+    <rect class="w w3 wire2" y="58" width="220" height="10" rx="3"/>
+    <rect class="w w3 wire2" y="74" width="190" height="10" rx="3"/>
+    <rect class="w w4" y="110" width="110" height="32" rx="16" fill="#A4563A"/>
+    <rect class="w w5 wire" x="122" y="110" width="110" height="32" rx="16"/>
+    <rect class="sel" x="-6" y="104" width="122" height="44" rx="4"/>
+    <rect x="-6" y="89" width="62" height="14" rx="2" fill="#A4563A"/>
+    <text class="tag" x="0" y="100">Button</text>
+  </g>
+
+  <!-- Seta -->
+  <g class="seta">
+    <path d="M362 140 h76" stroke="#C98462" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M430 131 l10 9 -10 9" fill="none" stroke="#C98462" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Lado do código -->
+  <text class="lbl" x="460" y="38">02 · CÓDIGO EM REACT + TS</text>
+  <rect class="card" x="460" y="52" width="340" height="176" rx="12"/>
+  <g transform="translate(480 82)">
+    <text class="code ln l1" y="0"><tspan class="k">export function</tspan> Hero() {</text>
+    <text class="code ln l2" x="16" y="22"><tspan class="k">return</tspan> (</text>
+    <text class="code ln l3" x="32" y="44">&lt;section <tspan class="s">className="hero"</tspan>&gt;</text>
+    <text class="code ln l4" x="48" y="66">&lt;h1&gt;Olá, sou a Bia&lt;/h1&gt;</text>
+    <text class="code ln l5" x="48" y="88">&lt;Button&gt;Ver projetos&lt;/Button&gt;</text>
+    <text class="code ln l6" x="32" y="110">&lt;/section&gt;); }<tspan class="cursor k"> ▍</tspan></text>
+  </g>
+</svg>
